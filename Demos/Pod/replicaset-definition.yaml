@@ -14,10 +14,10 @@ spec:
       labels:
         app: myapp
         type: front-end # Pod 에 붙는 라벨
-      spec:
-        containers:
-          - name: nginx-container
-            image: nginx
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
   replicas: 3
   selector:
     matchLabels:
